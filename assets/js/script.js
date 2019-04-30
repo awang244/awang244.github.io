@@ -33,6 +33,11 @@ $(document).ready(function() {
 		$("#b" + id_num).animate({"opacity": 1.0}, 'fast');
 	})
 
+	$("#home").click(function() {
+		$('html,body').animate({
+        	scrollTop: 0}, 'slow');
+	})
+
 	// $("#right").click(function() {
 	// 	if (currentImageNumber + 1 > 3) {
 	// 		currentImageNumber = 0;
@@ -63,9 +68,4 @@ $(document).ready(function() {
 	// 	$("#name").append('<div id="animal">' + animals[currentImageNumber] + '</div>');
 	// 	$("#carousel-strip").css("left", currentImageNumber * distanceToNextImage);
 	// })
-
-	$("#home").click(function() {
-		$('html,body').animate({
-        	scrollTop: 0}, 'slow');
-	})
 });
